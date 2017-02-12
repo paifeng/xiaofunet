@@ -1,0 +1,10 @@
+//用户表
+
+create database xiaofunet character set utf8;
+create table user(
+			account varchar(11) primary key not null,
+			password varchar(16) not null,
+			sex tinyint not null,
+			school varchar(20) not null,
+			shopcar varchar(2000) not null
+)character set utf8 engine innoDB;

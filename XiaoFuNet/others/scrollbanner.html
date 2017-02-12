@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+	<head>	
+		<meta charset="utf-8"/>
+		<style type="text/css">
+			*{
+				margin:0px;padding:0px;
+			}
+			#banner{
+					width:100%px;height:408px;overflow:hidden;z-index:2;
+				}
+			#banner ul{
+					width:978px;height:408px;position:relative;overflow:hidden;margin:0px auto;
+				}
+			#banner ul li{
+					width:748px;height:408px;list-style-type:none;position:absolute;top:0px;right:0px;
+				}
+		</style>
+	</head>
+	<body>
+		<div id="banner" style="background:#E6E8E7;">
+				<ul>
+					<li id="nav_1" style="display:block;"><img src="../images/banner/1.jpg"/></li>
+					<li id="nav_2" style="display:none;"><img src="../images/banner/2.jpg"/></li>
+					<li id="nav_3" style="display:none;"><img src="../images/banner/3.jpg"/></li>
+					<li id="nav_4" style="display:none;"><img src="../images/banner/4.jpg"/></li>
+					<li id="nav_5" style="display:none;"><img src="../images/banner/5.jpg"/></li>
+				</ul>
+			</div>
+	</body>
+	<script language="javascript" type="text/javascript">
+		<!--
+			var imgNum=1;
+			function banner(){
+				imgId="nav_"+imgNum;
+				//window.alert(imgId);
+					//window.alert(this.left_val);
+				document.getElementById("nav_1").style.display="none";
+				document.getElementById("nav_2").style.display="none";
+				document.getElementById("nav_3").style.display="none";
+				document.getElementById("nav_4").style.display="none";
+				document.getElementById("nav_5").style.display="none";
+				switch (imgNum){
+					case 1:
+						document.getElementById("banner").style.background="#AE0C04";
+					break;
+					case 2:
+						document.getElementById("banner").style.background="#004187";
+					break;
+					case 3:
+						document.getElementById("banner").style.background="#9f2440";
+					break;
+					case 4:
+						document.getElementById("banner").style.background="#406b1b";
+					break;
+					case 5:
+						document.getElementById("banner").style.background="#E9ECEB";
+					break;
+				}
+				document.getElementById(imgId).style.display="block";
+				imgNum+=1;
+				if(imgNum==6){
+					imgNum=1;
+				}
+				setTimeout("banner()",4000);
+			}
+			banner();
+		//-->
+		</script>
+</html>

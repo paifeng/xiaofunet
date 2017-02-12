@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+	<head>	
+		<meta charset="utf-8"/>
+		<style type="text/css">
+			*{
+				margin:0px;padding:0px;
+			}
+			#hidden_search_main{
+				width:100%;height:45px;background:#FB7E3B;
+			}
+			#hidden_search_box{
+				width:978px;height:45px;margin:0px auto;
+			}
+			#hidden_search_left{
+				width:200px;height:45px;float:left;position:relative;
+			}
+			#hidden_search_left img{
+				position:absolute;left:65px;top:5px;
+			}
+			#hidden_search_right{
+				width:778px;height:45px;float:right;
+			}
+			#hidden_search_right ul{
+				width:778px;height:30px;overflow:hidden;margin-top:8px;
+			}
+			#hidden_search_right ul li{
+				list-style-type:none;float:left;
+			}
+			#hidden_search_text{
+				width:600px;height:30px;padding:0px;margin:0px;border:0px;border-left:1px solid #FFF;
+				border-top:1px solid #FFF;border-bottom:1px solid #FFF;line-height:30px;font-size:15px;
+				font-weight:bold;background:#FFF;
+			}
+			#hidden_search_button{
+				width:100px;height:32px;border:0px;font-size:16px;font-weight:bold;padding:0px;
+				margin:0px;line-height:32px;color:#000;
+			}
+			#return_top{
+				width:70px;height:180px;background:#000;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="hidden_search_main">
+			<div id="hidden_search_box">
+				<div id="hidden_search_left">
+					<img src="../images/search_logo.gif"/>
+				</div>
+				<div id="hidden_search_right">
+					<ul>
+						<li><input id="hidden_search_text" type="text"></li>
+						<li><input id="hidden_search_button"  style="background:#FFF;" onmouseover="hoverChangeColor('hidden_search_button','#CCC')" onmouseout="hoverChangeColor('hidden_search_button','#FFF')" type="button" value="搜索"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script language="javascript" type="text/javascript" src="../javascript/myFunction.js"></script>
+	</body>
+</html>

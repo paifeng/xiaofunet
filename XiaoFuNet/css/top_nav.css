@@ -1,0 +1,146 @@
+@CHARSET "UTF-8";
+*{
+	padding:0px;margin:0px;list-style-type:none;
+	}
+body{
+		background:#FFF;
+	}
+input{
+	-webkit-appearance:none;
+	border-radius:0px;
+}
+#top_nav_main{
+		width:100%;height:1000px;z-index:1;
+	}
+#top_box{
+	width:100%;height:140px;
+}
+#top_nav_tool{
+	width:100%;height:42px;
+}
+#search_bar{
+	width:978px;height:98px;position:relative;margin:0px auto;
+}
+#search_box{
+	position:absolute;width:600px;height:70px;top:20px;left:300px;
+}
+#search_box_input{
+	width:600px;height:42px;padding:0px;margin:0px;
+}
+#search_box_input li{
+	float:left;padding:0px;margin:0px;overflow:hidden;
+}
+#search_input{
+	width:498px;height:40px;padding:0px;margin:0px;border:0px;border-left:1px solid #FB7E3B;
+	border-top:1px solid #FB7E3B;border-bottom:1px solid #FB7E3B;line-height:40px;font-size:16px;
+	font-weight:bold;background:#FFF;
+}
+#searchButton{
+	width:100px;height:42px;border:0px;font-size:16px;font-weight:bold;padding:0px;
+	margin:0px;line-height:42px;color:#FFF;
+}
+#search_box_relativeSearch{
+	width:600px;height:28px;padding:0px;margin:0px;
+}
+#search_box_relativeSearch ul{
+	width:600px;height:28px;padding:0px;margin:0px;
+}
+#search_box_relativeSearch ul li{
+	width:50px;height:28px;float:left;line-height:28px;color:#999;font-size:13px;
+}
+#search_box_relativeSearch ul li:hover{
+	text-decoration:underline;
+}
+#logo{
+	width:200px;position:absolute;left:50px;top:5px;
+}
+#logo img{
+	width:150px;
+}
+#nav{
+		width:100%;height:40px;position:relative;z-index:40;
+	}
+#nav_ul{
+		margin:0px auto;width:980px;height:40px;
+	}
+#nav ul li{
+		width:100px;height:40px;margin-left:40px;float:left;color:#000;font-size:14px;font-weight:700;
+		text-align:center;line-height:40px;list-style-type:none;padding:0px;
+	}
+#nav ul li#nav_li_first{
+		width:230px;height:40px;color:#FFF;font-size:20px;font-family:微软雅黑;font-weight:bold;background:#FB7E3B;position:relative;margin:0px;
+	}
+#drop_down_div{
+		width:230px;height:408px;position:absolute;top:40px;left:0px;
+		background:#FFF;z-index:50;
+	}
+#drop_down_div ul{
+		width:230px;height:408px;margin:0px;
+	}
+#drop_down_div ul li{
+		width:230px;height:50px;border-top:1px solid #ccc;color:#000;font-size:15px;margin:0px;
+		font-family:微软雅黑;text-align:left;line-height:50px;list-style-type:none;padding:0px;
+		position:relative;
+	}
+#drop_down_div ul li img{
+	position:absolute;top:15px;;left:20px;
+}
+#drop_down_div ul li span{
+	font-size:10px;color:#666;
+}
+#drop_down_div ul li#classify_li_ninth{
+		border-bottom:1px solid #ccc;
+	}
+#left_drop_right_first,#left_drop_right_second,#left_drop_right_third,#left_drop_right_fourth,
+#left_drop_right_fifth,#left_drop_right_sixth,#left_drop_right_seventh,#left_drop_right_eighth,
+#left_drop_right_ninth{
+		width:748px;height:406px;background:#FFF;position:absolute;left:230px;top:0px;
+		z-index:51;border-top:1px solid #FB7E3B;border-bottom:1px solid #FB7E3B;
+	}
+#left_drop_right_first_left{
+	width:300px;height:406px;float:left;margin:0px;padding:0px;
+}
+#left_drop_right_first_left ul{
+	width:300px;height:135px;text-align:left;font-size:16px;line-height:30px;margin:0px;padding:0px;
+}
+#left_drop_right_first_left ul p{
+	margin-left:40px;color:#666;
+}
+#left_drop_right_first_left ul ol{
+	width:250px;height:1px;border-top:1px solid #ccc;margin:0px auto;font-size:2px;line-height:1px;
+}
+#left_drop_right_first_left ul li{
+	width:60px;height:25px;border:none;line-height:30px;text-align:center;list-style-type:none;
+	margin-left:12px;margin-top:3px;font-size:13px;font-family:宋体;color:#666;line-height:25px;font-weight:normal;
+}
+#left_drop_right_first_right{
+	width:440px;height:406px;background:#000;float:right;
+}
+#left_drop_right_first_right_left{
+	width:218px;height:406px;background:blue;float:left;
+}
+#left_drop_right_first_right_right{
+	width:218px;height:406px;background:blue;float:right;
+}
+#left_drop_right_first_right_right_top{
+	width:218px;height:203px;background:green;
+}
+#left_drop_right_first_right_right_bottom{
+	width:218px;height:203px;background:yellow;
+}
+#index_banner{
+	width:100%;height:460px;
+}
+#top_iframe{
+	width:100%;height:460px;
+}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	

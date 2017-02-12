@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<style type="text/css">
+			*{
+				margin:0px;padding:0px;
+			}
+			li{
+				list-style-type:none;
+			}
+			#top_tool{
+				width:100%;height:40px;background:#FAFAFA;border-top:1px solid #DFDFDF;
+				border-bottom:1px solid #DFDFDF;
+			}
+			#top_tool ul{
+				width:978px;height:40px;margin:0px auto;
+			}
+			#location{
+				width:150px;heihgt:36px;float:left;
+			}
+			#location ul{
+				width:150px;heihgt:36px;
+			}
+			#location ul li{
+				width:75px;height:36px;float:left;color:#8c8c8c;line-height:36px;text-align:center;font-size:13px;
+			}
+			#location ul li a{
+				color:#8c8c8c;
+			}
+			#personal_server{
+				float:right;
+			}
+			#personal_server li{
+				width:70px;height:36px;float:left;font-size:13px;text-align:center;line-height:36px;color:#8c8c8c;
+				position:relative;
+			}
+			#personal_server li:hover{
+				text-decoration:underline;
+			}
+			.decollaror{
+				position:absolute;height:12px;width:2px;border-left:1px solid #dfdfdf;font-size:0px;padding:0px;
+				line-height:0px;top:30%;right:-1px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="top_tool">
+			<ul>
+				<div id="location">
+					<ul>
+						<li>铜陵学院</li>
+						<li><a href="#">切换学校</a></li>
+					</ul>
+				</div>
+				<div id="personal_server">
+						<li><a id="login" href="" target="_top">登陆</a>
+							<span class="decollaror"></span>
+						</li>
+						<li><a id="register" href="" target="_top">注册</a>
+							<span class="decollaror"></span>
+						</li>
+						<li>手机校服
+							<span class="decollaror"></span>
+						</li>
+						<li>我的订单
+							<span class="decollaror"></span>
+						</li>
+						<li>我的校服
+							<span class="decollaror"></span>
+						</li>
+						<li>最近浏览
+							<span class="decollaror"></span>
+						</li>
+						<li>我是商家
+							<span class="decollaror"></span>
+						</li>
+						<li>帮助中心
+							<span class="decollaror"></span>
+						</li>
+						<li>关注
+							<span class="decollaror"></span>
+						</li>
+						<li>收藏</li>
+				</div>
+			</ul>
+		</div>
+		<script language="javascript" type="text/javascript" src="../javascript/myFunction.js"></script>
+		<script language="javascript" type="text/javascript">
+		<!--
+			function tool_login_ok(account){
+				//window.alert('没有登录');
+				$("login").href="#_top";
+				$("login").innerHTML="HI,"+account;
+				$("register").href="#_top";
+				$("register").innerHTML="退出";
+			}
+			function tool_login_no(){				
+				$("login").href="../others/login.html";
+				$("login").innerHTML="登录";
+				$("register").href="../others/register.html";
+				$("register").innerHTML="注册";
+			}
+			var tool=new tool_bar();
+			tool.tool_islogin();
+		//-->
+		</script>
+	</body>
+</html>

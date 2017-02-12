@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>	
+		<meta charset="utf-8"/>
+		<style type="text/css">
+			*{
+				margin:0px;padding:0px;
+			}
+			li{
+				list-style-type:none;
+			}
+			#register_tool{
+				width:100%;height:42px;
+			}
+			#body_main{
+				width:100%;
+			}
+			#register_search_bar{
+				width:978px;height:100px;margin:0px auto;
+			}
+			#register_logo{
+				width:400px;height:100px;float:left;
+			}
+			#register_logo img{
+				height:80px;margin-top:15px;margin-left:30px;
+			}
+			#register_search{
+				width:578px;height:100px;float:right;position:relative;
+			}
+			#search_box{
+				position:absolute;width:400px;height:70px;top:30px;left:100px;
+			}
+			#search_box_input{
+				width:400px;height:42px;padding:0px;margin:0px;
+			}
+			#search_box_input li{
+				float:left;padding:0px;margin:0px;overflow:hidden;
+			}
+			#search_input{
+				width:298px;height:40px;padding:0px;margin:0px;border:0px;border-left:1px solid #FB7E3B;
+				border-top:1px solid #FB7E3B;border-bottom:1px solid #FB7E3B;line-height:40px;font-size:16px;
+				font-weight:bold;background:#FFF;
+			}
+			#searchButton{
+				width:100px;height:42px;border:0px;font-size:16px;font-weight:bold;padding:0px;
+				margin:0px;line-height:42px;color:#FFF;
+			}
+			#search_box_relativeSearch{
+				width:400px;height:28px;padding:0px;margin:0px;
+			}
+			#search_box_relativeSearch ul{
+				width:400px;height:28px;padding:0px;margin:0px;
+			}
+			#search_box_relativeSearch ul li{
+				width:50px;height:28px;float:left;line-height:28px;color:#999;font-size:13px;
+			}
+			#search_box_relativeSearch ul li:hover{
+				text-decoration:underline;
+			}
+			#register_box{
+				width:978px;/*background:#ccc;*/margin:0px auto;padding:0px;
+				margin-top:50px;
+			}
+			#schedule{
+				width:978px;height:30px;border-bottom:2px solid #FB7E3B;
+			}
+			#schedule ul{
+				width:900px;height:30px;margin:0px auto;position:relative;
+			}
+			#schedule ul li{
+				width:300px;height:30px;float:left;position:relative;text-align:center;line-height:30px;
+				font-size:17px;font-weight:bold;
+			}
+			#schedule ul li img{
+				position:absolute;left:70px;top:5px;width:20px;
+			}
+			#move_box{
+				display:block;width:200px;height:3px;background:#93310F;font-size:0px;padding:0px;line-height:0px;
+				position:absolute;top:30px;	
+			}
+			#register_input{
+				width:620px;height:259px;margin:0px auto;margin-top:50px;
+			}
+			#register_input_ul_one{
+				width:420px;height:259px;float:left;
+			}
+			#input_tel{
+				position:absolute;top:37px;left:70px;font-size:15px;color:#666;
+			}
+			#input_verification{
+				position:absolute;top:37px;left:260px;font-size:15px;z-index:100;
+			}
+			#tel{
+				width:300px;height:50px;margin-left:60px;margin-top:20px;line-height:50px;font-size:20px;background:#FFF;
+				border:1px solid #ccc;padding-left:10px;
+			}
+			#but_register{
+				display:block;width:180px;height:36px;margin-left:125px;margin-top:20px;cursor: pointer;border-radius:5px;
+				color:#A1A1A1;text-decoration:none;line-height:40px;text-align:center;font-size:25px;font-weight:bold;
+			}
+			#register_input_ul_one li{
+				width:418px;height:84px;list-style-type:none;padding:1px;position:relative;
+			}
+			#verification{
+				width:150px;height:50px;position:absolute;top:20px;left:60px;border-left:1px solid #ccc;
+				border-top:1px solid #ccc;border-bottom:1px solid #ccc;
+			}
+			#verification_input_val{
+				width:150px;height:50px;line-height:50px;font-size:20px;background:#FFF;position:absolute;
+				top:20px;left:210px;text-align:center;padding-left:10px;border:none;border-right:1px solid #ccc;
+				border-top:1px solid #ccc;border-bottom:1px solid #ccc;
+			}
+			#register_input_ul_two{
+				width:200px;height:140px;float:right;margin-top:20px;
+			}
+			#register_input_ul_two li{
+				width:200px;height:50px;line-height:50px;font-size:13px;
+				font-weight:bold;position:relative;
+			}
+			#notice_one img,#notice_two img{
+				width:15px;position:absolute;top:15px;
+			}
+			#notice_two{
+				margin-top:38px;color:red;
+			}
+			#register_bottom{
+				width:100%;height:300px;
+			}
+			#bottom_iframe{
+				width:100%;height:300px;
+			}
+			#message_judge{
+				width:260px;height:150px;margin:0px auto;margin-top:70px;
+			}
+			#message_judge ul{
+				width:260px;height:50px;
+			}
+			#message_judge ul li{
+				list-style-type:none;width:130px;height:50px;float:left;
+				position:relative;
+			}
+			#time{
+				position:absolute;width:130px;height:50px;border:0px;font-size:16px;font-weight:bold;padding:0px;
+				margin:0px;line-height:42px;color:#666;border-left:1px solid #ccc;
+				border-top:1px solid #ccc;border-bottom:1px solid #ccc;
+			}
+			#input_code{
+				width:129px;height:48px;padding:0px;margin:0px;border:0px;border-right:1px solid #ccc;
+				border-top:1px solid #ccc;border-bottom:1px solid #ccc;line-height:40px;font-size:16px;
+				font-weight:bold;background:#FFF;text-align:center;
+			}
+			#but_messge{
+				display:block;width:180px;height:36px;cursor: pointer;border-radius:5px;margin-left:40px;margin-top:7px;
+				color:#A1A1A1;text-decoration:none;line-height:40px;text-align:center;font-size:25px;font-weight:bold;
+			}
+			#notice_code{
+				width:260px;height:50px;text-align:center;line-height:50px;color:red;font-size:16px;
+			}
+			#input_personal_message{
+				width:592px;height:350px;margin:0px auto;margin-top:50px;
+			}
+			#input_personal_message ul{
+				width:592px;height:70px;text-align:center;position:relative;
+			}
+			#input_personal_message_con{
+				width:392px;height:350px;float:left;
+			}
+			#input_personal_message_notice{
+				width:200px;height:350px;float:right;
+			}
+			#input_personal_message_notice ul{
+				width:200px;height:350px;position:relative;
+			}
+			#input_personal_message_notice_one{
+				list-style-type:none;width:200px;height:70px;position:absolute;
+				left:0px;top:0px;font-size:13px;line-height:70px;font-weight:bold;
+			}
+			#input_personal_message_notice_two{
+				list-style-type:none;width:200px;height:70px;position:absolute;
+				left:0px;top:70px;font-size:13px;line-height:70px;font-weight:bold;
+			}
+			#input_personal_message_notice_three{
+				list-style-type:none;width:200px;height:70px;position:absolute;
+				left:0px;top:215px;font-size:13px;line-height:70px;font-weight:bold;
+			}
+			#input_personal_message_notice_one img{
+				width:15px;position:absolute;top:25px;
+			}
+			#input_personal_message_notice_two img{
+				width:15px;position:absolute;top:25px;
+			}
+			#input_type{
+				width:80px;height:70px;float:left;list-style-type:none;
+				text-align:center;line-height:70px;
+			}
+			#input_con{
+				width:310px;height:70px;float:left;list-style-type:none;
+				text-align:center;position:relative;
+			}
+			#pwd,#judge_pwd{
+				width:310px;height:50px;line-height:50px;font-size:20px;background:#FFF;
+				text-align:center;border:1px solid #ccc;position:absolute;left:0px;top:10px;
+			}
+			#sex_box{
+				position:absolute;top:20px;left:110px;
+			}
+			#school{
+				width:310px;height:50px;line-height:50px;font-size:20px;background:#FFF;
+				text-align:center;border:1px solid #ccc;position:absolute;left:0px;top:14px;
+			}
+			#finish{
+				display:block;width:180px;height:36px;cursor: pointer;border-radius:5px;
+				color:#A1A1A1;text-decoration:none;line-height:40px;text-align:center;
+				font-size:25px;font-weight:bold;position:absolute;left:140px;top:17px;
+			}
+			#man,#woman{
+				width:20px;height:20px;
+			}
+		</style>
+	</head>
+	<body>
+		<iframe id="register_tool" scrolling="no" frameborder="no" src="./top_tool.html"></iframe>
+		<div id="body_main">
+			<div id="register_search_bar">
+				<div id="register_logo">
+					<img src="../images/logo.gif"/>
+				</div>
+				<div id="register_search">
+					<div id="search_box">
+						<div id="search_box_input">
+							<li>
+								<input id="search_input" type="text" value="" name="searchgoods">
+							</li>
+							<li>
+								<input id="searchButton" type="button" value="搜索" style="background:#FB7E3B;" onmouseover="hoverChangeColor('searchButton','#E55F17')" onmouseout="hoverChangeColor('searchButton','#FB7E3B')"/>
+							</li>
+						</div>
+						<div id="search_box_relativeSearch">
+							<ul>
+								<li>修电脑</li>
+								<li>发传单</li>
+								<li>拿快递</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="register_box" style="height:320px;">
+				<div id="schedule">
+					<ul>
+						<span id="move_box" style="left:30px;"></span>
+						<li>
+							<img src="../images/circl.gif">
+							设置登陆账户							
+						</li>
+						<li>
+							<img src="../images/circl_before.gif">
+							短信验证							
+						</li>
+						<li>
+							<img src="../images/circl_before.gif">
+							完善个人信息							
+						</li>
+					</ul>
+				</div>
+				<div id="register_input" style="display:block;">
+					<ul id="register_input_ul_one">
+						<li>
+							<p id="input_tel" style="display:block;">常用手机号</p>
+							<input id="tel" autocomplete="off" value="" type="text" onkeyup="register_judge.show_notice('input_tel','tel')" onfocus="judge.tel_notice()" onblur="judge.judge_tel()"/>
+						</li>
+						<li>
+							<img id="verification" onclick="Verification()" src=""/>
+							<p id="input_verification" style="color:#666;">验证码</p>
+							<input id="verification_input_val" autocomplete="off" onkeyup="register_judge.show_notice('input_verification','verification_input_val')" type="text" value="" onfocus="judge.verification_notice()"  onblur="judge.judge_vrification()"/>
+						</li>
+						<li>
+							<a id="but_register" style="background:#EDEDED;" onmouseover="hoverChangeColor('but_register','#D1D1D1')" onmouseout="hoverChangeColor('but_register','#EDEDED')" onclick="javascript:judge.send();">发送短信</a>
+						</li>
+					</ul>
+					<ul id="register_input_ul_two">
+						<li id="notice_one" style="color:red;"></li>
+						<li id="notice_two"></li>
+					</ul>
+				</div>
+				<div id="message_judge" style="display:none">
+					<ul>
+						<li>
+							<input type="button" id="time" value="50s后重发"/>
+						</li>
+						<li>
+							<input type="text" id="input_code" value="">
+						</li>
+					</ul>
+					<ul>
+							<p id="notice_code"></p>				
+					</ul>
+					<ul>
+						<a id="but_messge" onclick="judge.send_code()" style="background:#EDEDED;" onmouseover="hoverChangeColor('but_messge','#D1D1D1')" onmouseout="hoverChangeColor('but_messge','#EDEDED')">立即验证</a>					
+					</ul>
+				</div>
+				<div id="input_personal_message" style="display:none">
+					<div id="input_personal_message_con">
+						<ul>
+							<li id="input_type">账户密码</li>
+							<li id="input_con">
+								<input id="pwd" type="password" value=""  onfocus="finish_register.notice_pwd()" onblur="finish_register.judge_pwd()"/>
+							</li>
+						</ul>
+						<ul>
+							<li id="input_type">确认密码</li>
+							<li id="input_con">
+								<input id="judge_pwd" type="password" onblur="finish_register.checkpwd()" onfocus="finish_register.clear()" value="">
+							</li>
+						</ul>
+						<ul>
+							<li id="input_type">性别</li>
+							<li id="input_con">
+								<p id="sex_box">男<input id="man" checked type="radio" name="sex" value=""/>
+								女<input type="radio" id="woman" name="sex" value=""/></p>
+							</li>
+						</ul>
+						<ul>
+							<li id="input_type">所在院校</li>
+							<li id="input_con">
+								<input id="school" type="text" value="">
+							</li>
+						</ul>
+						<ul>
+							<a id="finish" style="background:#EDEDED;" onmouseover="hoverChangeColor('finish','#D1D1D1')" onmouseout="hoverChangeColor('finish','#EDEDED')" onclick="javascript:finish_register.finish();">完成注册</a>
+						</ul>
+					</div>
+					<div id="input_personal_message_notice">
+						<ul>
+							<li id="input_personal_message_notice_one" style="color:#000;"></li>
+							<li id="input_personal_message_notice_two" style="color:red;"></li>
+							<li id="input_personal_message_notice_three" style="color:red;"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="register_bottom">
+			<iframe id="bottom_iframe" scrolling="no" frameborder="no" src="./bottom.html"></iframe>
+		</div>
+		<script language="javascript" type="text/javascript" src="../javascript/myFunction.js"></script>
+		<script language="javascript" type="text/javascript" src="../javascript/regester.js"></script>
+	</body>
+</html>

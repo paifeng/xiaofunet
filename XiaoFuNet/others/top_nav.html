@@ -1,0 +1,636 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>	
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../css/top_nav.css"/>
+		<script defer="defer" language="javascript" type="text/javascript">
+		<!--
+			function Left_Navigate(){
+				this.show_change=function (num){
+					//window.alert(num);
+					var change_id="classify_li_"+num;
+					//window.alert(change_id);
+					document.getElementById(change_id).style.background="#FB7E3B";
+					var show_id="left_drop_right_"+num;
+					//window.alert(show_id);
+					document.getElementById(show_id).style.display="block";
+				}
+				this.recover=function (num){
+					var change_id="classify_li_"+num;
+					var show_id="left_drop_right_"+num;
+					document.getElementById(change_id).style.background="";
+					document.getElementById(show_id).style.display="none";
+				}
+			}
+			function load(){
+				left_navigate=new Left_Navigate();
+			}
+		//-->
+		</script>
+		</head>
+	<body onload="load()">
+		<div id="top_box">
+			<iframe id="top_nav_tool" scrolling="no" frameborder="no" src="./top_tool.html"/></iframe>			
+			<div id="search_bar">
+				<div id="search_box">
+					<div id="search_box_input">
+						<li>
+							<input id="search_input" type="text" value="" name="searchgoods">
+						</li>
+						<li>
+							<input id="searchButton" type="button" value="搜索" style="background:#FB7E3B;" onmouseover="hoverChangeColor('searchButton','#E55F17')" onmouseout="hoverChangeColor('searchButton','#FB7E3B')"/>
+						</li>
+					</div>
+					<div id="search_box_relativeSearch">
+						<ul>
+							<li>修电脑</li>
+							<li>发传单</li>
+							<li>拿快递</li>
+						</ul>
+					</div>
+				</div>
+				<div id="logo">
+					<img src="../images/logo.gif"/>
+				</div>
+			</div>
+		</div>
+		<div id="top_nav_main">
+			<div id="nav">
+				<ul id="nav_ul">
+					<li id="nav_li_first">分类
+						<div id="drop_down_div">
+							<ul>
+								<li id="classify_li_first" onmouseover="left_navigate.show_change('first')" onmouseout="left_navigate.recover('first')" style="background:;"><img src="../images/computer.gif"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;视觉设计&nbsp;&nbsp;<span>摄影&nbsp;&nbsp;美工</span></li>
+								<li id="classify_li_second" onmouseover="left_navigate.show_change('second')" onmouseout="left_navigate.recover('second')"style="background:;"><img src="../images/expree.gif"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;计算机&nbsp;&nbsp;<span>软件&nbsp;&nbsp;硬件&nbsp;&nbsp;周边</li>
+								<li id="classify_li_third" onmouseover="left_navigate.show_change('third')" onmouseout="left_navigate.recover('third')"style="background:;"><img src="../images/study.gif"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;互联网&nbsp;&nbsp;<span>技术开发&nbsp;&nbsp;技术操作&nbsp;&nbsp;</li>
+								<li id="classify_li_fourth" onmouseover="left_navigate.show_change('fourth')" onmouseout="left_navigate.recover('fourth')"style="background:;"><img src="../images/parttimejob.gif"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;工作服务&nbsp;&nbsp;<span>技术类&nbsp;&nbsp;服务类</li>
+								<li id="classify_li_fifth" onmouseover="left_navigate.show_change('fifth')" onmouseout="left_navigate.recover('fifth')"style="background:;"><img src="../images/run.gif"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学霸问答&nbsp;&nbsp;<span>文史&nbsp;&nbsp;理工</li>
+								<li id="classify_li_sixth" onmouseover="left_navigate.show_change('sixth')" onmouseout="left_navigate.recover('sixth')"style="background:;"><img src="../images/money.gif"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;留学代购&nbsp;&nbsp;<span>亚洲货&nbsp;&nbsp;欧美货</li>
+								<li id="classify_li_seventh" onmouseover="left_navigate.show_change('seventh')" onmouseout="left_navigate.recover('seventh')"style="background:;"><img src="../images/game.gif"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;真人服务&nbsp;&nbsp;<span>LOL&nbsp;&nbsp;CF</li>
+								<li id="classify_li_eighth" onmouseover="left_navigate.show_change('eighth')" onmouseout="left_navigate.recover('eighth')"style="background:;"><img src="../images/other.gif"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其他&nbsp;&nbsp;<span>一切皆有可能</li>
+							</ul>
+							<div onmouseover="left_navigate.show_change('first')" onmouseout="left_navigate.recover('first')" id="left_drop_right_first" style="display:none;">
+								<div id="left_drop_right_first_left">
+									<ul>
+										<p>修电脑</p>
+										<ol></ol>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+									</ul>
+									<ul>
+										<p>修电脑</p>
+										<ol></ol>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+									</ul>
+									<ul>
+										<p>修电脑</p>
+										<ol></ol>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+									</ul>
+								</div>
+								<div id="left_drop_right_first_right">
+									<div id="left_drop_right_first_right_left">
+									
+									</div>
+									<div id="left_drop_right_first_right_right">
+										<div id="left_drop_right_first_right_right_top"></div>
+										<div id="left_drop_right_first_right_right_bottom"></div>
+									</div>
+								</div>
+							</div>
+							<div onmouseover="left_navigate.show_change('second')" onmouseout="left_navigate.recover('second')" id="left_drop_right_second" style="display:none;">
+								<div id="left_drop_right_first_left">
+									<ul>
+										<p>拿快递</p>
+										<ol></ol>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+									</ul>
+									<ul>
+										<p>拿快递</p>
+										<ol></ol>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+									</ul>
+									<ul>
+										<p>拿快递</p>
+										<ol></ol>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+										<li>拿快递</li>
+									</ul>
+								</div>
+								<div id="left_drop_right_first_right">
+									<div id="left_drop_right_first_right_left">
+									
+									</div>
+									<div id="left_drop_right_first_right_right">
+										<div id="left_drop_right_first_right_right_top"></div>
+										<div id="left_drop_right_first_right_right_bottom"></div>
+									</div>
+								</div>
+							</div>
+							<div onmouseover="left_navigate.show_change('third')" onmouseout="left_navigate.recover('third')" id="left_drop_right_third" style="display:none;">
+								<div id="left_drop_right_first_left">
+									<ul>
+										<p>求学霸</p>
+										<ol></ol>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+									</ul>
+									<ul>
+										<p>求学霸</p>
+										<ol></ol>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+									</ul>
+									<ul>
+										<p>求学霸</p>
+										<ol></ol>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+										<li>求学霸</li>
+									</ul>
+								</div>
+								<div id="left_drop_right_first_right">
+									<div id="left_drop_right_first_right_left">
+									
+									</div>
+									<div id="left_drop_right_first_right_right">
+										<div id="left_drop_right_first_right_right_top"></div>
+										<div id="left_drop_right_first_right_right_bottom"></div>
+									</div>
+								</div>
+							</div>
+							<div onmouseover="left_navigate.show_change('fourth')" onmouseout="left_navigate.recover('fourth')" id="left_drop_right_fourth" style="display:none;">
+								<div id="left_drop_right_first_left">
+									<ul>
+										<p>做兼职</p>
+										<ol></ol>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+									</ul>
+									<ul>
+										<p>做兼职</p>
+										<ol></ol>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+									</ul>
+									<ul>
+										<p>做兼职</p>
+										<ol></ol>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+										<li>做兼职</li>
+									</ul>
+								</div>
+								<div id="left_drop_right_first_right">
+									<div id="left_drop_right_first_right_left">
+									
+									</div>
+									<div id="left_drop_right_first_right_right">
+										<div id="left_drop_right_first_right_right_top"></div>
+										<div id="left_drop_right_first_right_right_bottom"></div>
+									</div>
+								</div>
+							</div>
+							<div onmouseover="left_navigate.show_change('fifth')" onmouseout="left_navigate.recover('fifth')" id="left_drop_right_fifth" style="display:none;">
+								<div id="left_drop_right_first_left">
+									<ul>
+										<p>代跑腿</p>
+										<ol></ol>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+									</ul>
+									<ul>
+										<p>代跑腿</p>
+										<ol></ol>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+									</ul>
+									<ul>
+										<p>代跑腿</p>
+										<ol></ol>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+										<li>代跑腿</li>
+									</ul>
+								</div>
+								<div id="left_drop_right_first_right">
+									<div id="left_drop_right_first_right_left">
+									
+									</div>
+									<div id="left_drop_right_first_right_right">
+										<div id="left_drop_right_first_right_right_top"></div>
+										<div id="left_drop_right_first_right_right_bottom"></div>
+									</div>
+								</div>
+							</div>
+							<div onmouseover="left_navigate.show_change('sixth')" onmouseout="left_navigate.recover('sixth')" id="left_drop_right_sixth" style="display:none;">
+								<div id="left_drop_right_first_left">
+									<ul>
+										<p>优惠券</p>
+										<ol></ol>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+									</ul>
+									<ul>
+										<p>优惠券</p>
+										<ol></ol>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+									</ul>
+									<ul>
+										<p>优惠券</p>
+										<ol></ol>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+										<li>优惠券</li>
+									</ul>
+								</div>
+								<div id="left_drop_right_first_right">
+									<div id="left_drop_right_first_right_left">
+									
+									</div>
+									<div id="left_drop_right_first_right_right">
+										<div id="left_drop_right_first_right_right_top"></div>
+										<div id="left_drop_right_first_right_right_bottom"></div>
+									</div>
+								</div>
+							</div>
+							<div onmouseover="left_navigate.show_change('seventh')" onmouseout="left_navigate.recover('seventh')" id="left_drop_right_seventh" style="display:none;">
+								<div id="left_drop_right_first_left">
+									<ul>
+										<p>练游戏</p>
+										<ol></ol>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+									</ul>
+									<ul>
+										<p>练游戏</p>
+										<ol></ol>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+									</ul>
+									<ul>
+										<p>练游戏</p>
+										<ol></ol>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+										<li>练游戏</li>
+									</ul>
+								</div>
+								<div id="left_drop_right_first_right">
+									<div id="left_drop_right_first_right_left">
+									
+									</div>
+									<div id="left_drop_right_first_right_right">
+										<div id="left_drop_right_first_right_right_top"></div>
+										<div id="left_drop_right_first_right_right_bottom"></div>
+									</div>
+								</div>
+							</div>
+							<div onmouseover="left_navigate.show_change('eighth')" onmouseout="left_navigate.recover('eighth')" id="left_drop_right_eighth" style="display:none;">
+								<div id="left_drop_right_first_left">
+									<ul>
+										<p>其他</p>
+										<ol></ol>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+									</ul>
+									<ul>
+										<p>其他</p>
+										<ol></ol>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+									</ul>
+									<ul>
+										<p>其他</p>
+										<ol></ol>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+										<li>其他</li>
+									</ul>
+								</div>
+								<div id="left_drop_right_first_right">
+									<div id="left_drop_right_first_right_left">
+									
+									</div>
+									<div id="left_drop_right_first_right_right">
+										<div id="left_drop_right_first_right_right_top"></div>
+										<div id="left_drop_right_first_right_right_bottom"></div>
+									</div>
+								</div>
+							</div>
+							<div onmouseover="left_navigate.show_change('ninth')" onmouseout="left_navigate.recover('ninth')" id="left_drop_right_ninth" style="display:none;">
+								<div id="left_drop_right_first_left">
+									<ul>
+										<p>修电脑</p>
+										<ol></ol>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+									</ul>
+									<ul>
+										<p>修电脑</p>
+										<ol></ol>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+									</ul>
+									<ul>
+										<p>修电脑</p>
+										<ol></ol>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+										<li>修电脑</li>
+									</ul>
+								</div>
+								<div id="left_drop_right_first_right">
+									<div id="left_drop_right_first_right_left">
+									
+									</div>
+									<div id="left_drop_right_first_right_right">
+										<div id="left_drop_right_first_right_right_top"></div>
+										<div id="left_drop_right_first_right_right_bottom"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>首页</li>
+					<li>私人订制</li>
+					<li>精选帅学长</li>
+					<li>十万火急</li>
+					<li>今日新单</li>
+				</ul>
+			</div>
+			<div id="index_banner">
+			<iframe id="top_iframe" scrolling="no" frameborder="no" src="../others/scrollbanner.html"/></iframe>
+			</div>
+			<script language="javascript" type="text/javascript" src="../javascript/myFunction.js"></script>
+		</div>
+	</body>
+</html>

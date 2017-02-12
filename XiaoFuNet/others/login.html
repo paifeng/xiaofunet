@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<style type="text/css">
+			*{
+				margin:0px;padding:0px;
+			}
+			li{
+				list-style-type:none;
+			}
+			#register_tool{
+				width:100%;height:42px;
+			}
+			#body_main{
+				width:100%;
+			}
+			#register_search_bar{
+				width:978px;height:100px;margin:0px auto;
+			}
+			#register_logo{
+				width:400px;height:100px;float:left;
+			}
+			#register_logo img{
+				height:80px;margin-top:15px;margin-left:30px;
+			}
+			#register_search{
+				width:578px;height:100px;float:right;position:relative;
+			}
+			#search_box{
+				position:absolute;width:400px;height:70px;top:30px;left:100px;
+			}
+			#search_box_input{
+				width:400px;height:42px;padding:0px;margin:0px;
+			}
+			#search_box_input li{
+				float:left;padding:0px;margin:0px;overflow:hidden;
+			}
+			#search_input{
+				width:298px;height:40px;padding:0px;margin:0px;border:0px;border-left:1px solid #FB7E3B;
+				border-top:1px solid #FB7E3B;border-bottom:1px solid #FB7E3B;line-height:40px;font-size:16px;
+				font-weight:bold;background:#FFF;
+			}
+			#searchButton{
+				width:100px;height:42px;border:0px;font-size:16px;font-weight:bold;padding:0px;
+				margin:0px;line-height:42px;color:#FFF;
+			}
+			#search_box_relativeSearch{
+				width:400px;height:28px;padding:0px;margin:0px;
+			}
+			#search_box_relativeSearch ul{
+				width:400px;height:28px;padding:0px;margin:0px;
+			}
+			#search_box_relativeSearch ul li{
+				width:50px;height:28px;float:left;line-height:28px;color:#999;font-size:13px;
+			}
+			#search_box_relativeSearch ul li:hover{
+				text-decoration:underline;
+			}
+			#register_box{
+				width:978px;/*background:#ccc;*/margin:0px auto;padding:0px;
+				margin-top:50px;height:420px;
+			}
+			#line{
+				width:978px;height:2px;background:#D1D7DC;
+			}
+			#register_input{
+				width:620px;height:259px;margin:0px auto;margin-top:50px;
+			}
+			#register_input_ul_one{
+				width:420px;height:359px;float:left;
+			}
+			#input_tel,#input_pwd{
+				position:absolute;top:37px;left:70px;font-size:15px;color:#666;
+			}
+			#input_verification{
+				position:absolute;top:37px;left:260px;font-size:15px;z-index:100;
+			}
+			#tel,#pwd{
+				width:300px;height:50px;margin-left:60px;margin-top:20px;line-height:50px;font-size:20px;background:#FFF;
+				border:1px solid #ccc;padding-left:10px;
+			}
+			#but_register{
+				display:block;width:180px;height:36px;margin-left:125px;margin-top:20px;cursor: pointer;border-radius:5px;
+				color:#A1A1A1;text-decoration:none;line-height:40px;text-align:center;font-size:25px;font-weight:bold;
+			}
+			#register_input_ul_one li{
+				width:418px;height:84px;list-style-type:none;padding:1px;position:relative;
+			}
+			#verification{
+				width:150px;height:50px;position:absolute;top:20px;left:60px;border-left:1px solid #ccc;
+				border-top:1px solid #ccc;border-bottom:1px solid #ccc;
+			}
+			#verification_input_val{
+				width:150px;height:50px;line-height:50px;font-size:20px;background:#FFF;position:absolute;
+				top:20px;left:210px;text-align:center;padding-left:10px;border:none;border-right:1px solid #ccc;
+				border-top:1px solid #ccc;border-bottom:1px solid #ccc;
+			}
+			#register_input_ul_two{
+				width:200px;height:140px;float:right;margin-top:20px;
+			}
+			#register_input_ul_two li{
+				width:200px;height:50px;line-height:50px;font-size:13px;
+				font-weight:bold;position:relative;
+			}
+			#notice_one img,#notice_two img,#notice_three img{
+				width:15px;position:absolute;top:15px;
+			}
+			#notice_two{
+				margin-top:38px;color:red;
+			}
+			#notice_three{
+				margin-top:38px;color:red;
+			}
+			#register_bottom{
+				width:100%;height:300px;
+			}
+			#bottom_iframe{
+				width:100%;height:300px;
+			}
+		</style>
+	</head>
+	<body>
+		<iframe id="register_tool" scrolling="no" frameborder="no" src="./top_tool.html"></iframe>
+		<div id="body_main">
+			<div id="register_search_bar">
+				<div id="register_logo">
+					<img src="../images/logo.gif"/>
+				</div>
+				<div id="register_search">
+					<div id="search_box">
+						<div id="search_box_input">
+							<li>
+								<input id="search_input" type="text" value="" name="searchgoods">
+							</li>
+							<li>
+								<input id="searchButton" type="button" value="搜索" style="background:#FB7E3B;" onmouseover="hoverChangeColor('searchButton','#E55F17')" onmouseout="hoverChangeColor('searchButton','#FB7E3B')"/>
+							</li>
+						</div>
+						<div id="search_box_relativeSearch">
+							<ul>
+								<li>修电脑</li>
+								<li>发传单</li>
+								<li>拿快递</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="register_box">
+				<div id="line">
+				</div>
+				<div id="register_input" style="display:block;">
+					<ul id="register_input_ul_one">
+						<li>
+							<p id="input_tel" style="display:block;">手机号</p>
+							<input id="tel" autocomplete="off" value="" type="text" onkeyup="register_judge.show_notice('input_tel','tel')" onfocus="judge.tel_notice()" onblur="login.judge_tel()"/>
+						</li>
+						<li>
+							<p id="input_pwd" style="display:block;">密码</p>
+							<input id="pwd" autocomplete="off" value="" type="password" onkeyup="register_judge.show_notice('input_pwd','pwd')"/>
+						</li>
+						<li>
+							<img id="verification" onclick="Verification()" src=""/>
+							<p id="input_verification" style="color:#666;">验证码</p>
+							<input id="verification_input_val" autocomplete="off" onkeyup="register_judge.show_notice('input_verification','verification_input_val')" type="text" value="" onfocus="login.verification_notice()"  onblur="login.login_vrification()"/>
+						</li>
+						<li>
+							<a id="but_register" style="background:#EDEDED;" onmouseover="hoverChangeColor('but_register','#D1D1D1')" onmouseout="hoverChangeColor('but_register','#EDEDED')" onclick="login.login()">登陆</a>
+						</li>
+					</ul>
+					<ul id="register_input_ul_two">
+						<li id="notice_one" style="color:red;"></li>
+						<li id="notice_two"></li>
+						<li id="notice_three"></li>
+					</ul>
+				</div>
+			</div>
+			<div id="register_bottom">
+				<iframe id="bottom_iframe" scrolling="no" frameborder="no" src="./bottom.html"></iframe>
+			</div>
+			<script language="javascript" type="text/javascript" src="../javascript/myFunction.js"></script>
+			<script language="javascript" type="text/javascript" src="../javascript/regester.js"></script>
+			<script language="javascript" type="text/javascript" src="../javascript/login.js"></script>
+	</body>
+</html>
