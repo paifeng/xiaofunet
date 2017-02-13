@@ -16,7 +16,6 @@
 ***
 ####运行环境
 		IDE : PhpStorm 
-		tomcat7.0.1
 ***
 ####APP简介
 >
